@@ -10,7 +10,6 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
 }
 
 body {
@@ -33,9 +32,34 @@ body {
     --glass-bg: rgba(255, 255, 255, 0.05);
     --glass-border: rgba(255, 255, 255, 0.1);
     --text-primary: #ffffff;
-    --text-secondary: #b8c1d9;
+    --text-secondary: #e2e8f0;
+    /* Lighter for visibility on dark bg */
     --shadow-light: 0 20px 40px rgba(0, 0, 0, 0.3);
     --shadow-heavy: 0 30px 60px rgba(0, 0, 0, 0.5);
+}
+
+/* Force Light Text Globally */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+span,
+div,
+.stat-value,
+.comparison-text {
+    color: var(--text-primary);
+}
+
+p,
+.stat-label,
+.hero-subtitle,
+.footer-content p {
+    color: var(--text-secondary);
 }
 
 /* Loading Screen - Advanced */
@@ -713,6 +737,14 @@ section {
     transition: all 0.4s ease;
     position: relative;
     overflow: hidden;
+    color: #2d3748 !important;
+    /* Forces text to be dark on this white card */
+}
+
+/* Ensure children inherit the dark color */
+.challenge-step h4,
+.challenge-step p {
+    color: #2d3748 !important;
 }
 
 .challenge-step:hover {

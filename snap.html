@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From Streaks to Skills: Transform Your Coding Journey</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&family=Orbitron:wght@400;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Advanced Loading Screen -->
+    <div class="loader-container" id="loader">
+        <div class="loader-logo">CODESTREAK</div>
+        <div class="loader-spinner"></div>
+        <div class="loader-text">Igniting Your Coding Journey</div>
+        <div class="loader-progress">
+            <div class="loader-progress-fill"></div>
+        </div>
+    </div>
+
+    <!-- Floating Particles -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <ul class="nav-links">
+            <li><a href="#hero" class="nav-link active" data-section="hero">Home</a></li>
+            <li><a href="#intro" class="nav-link" data-section="intro">Intro</a></li>
+            <li><a href="#snapchat" class="nav-link" data-section="snapchat">Snapchat</a></li>
+            <li><a href="#psychology" class="nav-link" data-section="psychology">Psychology</a></li>
+            <li><a href="#comparison" class="nav-link" data-section="comparison">Compare</a></li>
+            <li><a href="#reality" class="nav-link" data-section="reality">Reality</a></li>
+            <li><a href="#challenge" class="nav-link" data-section="challenge">Challenge</a></li>
+            <li><a href="#results" class="nav-link" data-section="results">Results</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero reveal">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">From Streaks to Skills</h1>
+            <p class="hero-subtitle">I'm standing here as one of you — struggling, learning, failing, and trying again.
+                Like you, I scroll social media daily, maintain Snapchat streaks, and postpone coding thinking "I'll
+                start tomorrow".</p>
+
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="300">0</span>
+                    <span class="stat-label">Problems Solved</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="60">0</span>
+                    <span class="stat-label">Day Streak</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="90">0</span>
+                    <span class="stat-label">% Confidence</span>
+                </div>
+            </div>
+
+            <div class="cta-buttons">
+                <a href="#challenge" class="btn-primary">Start 7-Day Challenge <i class="fas fa-rocket"></i></a>
+                <a href="#intro" class="btn-secondary">Watch Seminar <i class="fas fa-play"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 1. Introduction -->
+    <section id="intro" class="reveal">
+        <h2 class="section-title">1. Speaking as One of Us</h2>
+        <div class="glass-card reveal-left">
+            <h3><i class="fas fa-user-graduate"></i> I'm One of You</h3>
+            <p>This seminar isn't from someone who's figured everything out. I'm a student just like you — struggling
+                with confusing problems, comparing myself to toppers, waiting to "feel ready". But here's the truth:
+                nobody starts confident. Confidence comes after consistency.</p>
+            <div style="text-align: center; margin-top: 2rem;">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+                    alt="Student coding passionately"
+                    style="max-width: 100%; height: 300px; object-fit: cover; border-radius: 20px; box-shadow: var(--shadow-heavy);">
+            </div>
+        </div>
+
+        <div class="glass-card reveal-right">
+            <h3><i class="fas fa-brain"></i> The Habit Revolution</h3>
+            <p>This isn't about being perfect. It's about building a habit together. If Snapchat streaks can make us
+                consistent for entertainment, imagine what daily coding can do for our skills, jobs, and confidence.</p>
+        </div>
+    </section>
+
+    <!-- 2. Snapchat Streak -->
+    <section id="snapchat" class="reveal">
+        <h2 class="section-title">2. The Streak We All Know</h2>
+        <div class="streak-container glass-card">
+            <div class="streak-flame">🔥</div>
+            <div class="streak-counter" id="snapStreakCounter">0</div>
+            <h3>What Makes Snapchat Addictive?</h3>
+            <ul style="max-width: 600px; margin: 2rem auto; font-size: 1.2rem; color: var(--text-secondary);">
+                <li><i class="fas fa-clock"></i> One snap every 24 hours</li>
+                <li><i class="fas fa-fire"></i> 🔥 emoji increases with days</li>
+                <li><i class="fas fa-exclamation-triangle"></i> Missing one day = streak breaks</li>
+                <li><i class="fas fa-question"></i> Did it make you smarter? NO. But it made you CONSISTENT.</li>
+            </ul>
+            <p style="font-size: 1.3rem; font-weight: 600; margin-top: 2rem;">Snapchat proved we CAN be consistent
+                without effort.</p>
+        </div>
+    </section>
+
+    <!-- 3. Psychology Behind Streaks -->
+    <section id="psychology" class="reveal">
+        <h2 class="section-title">3. Psychology of Streaks</h2>
+        <div class="glass-card reveal-left">
+            <h3><i class="fas fa-lightbulb"></i> Why Streaks Are Irresistible</h3>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-value">1</div>
+                    <div>Minimal Effort</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">📈</div>
+                    <div>Visible Progress</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">❤️</div>
+                    <div>Emotional Bond</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">⚠️</div>
+                    <div>Fear of Loss</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="glass-card reveal-right">
+            <h3><i class="fas fa-key"></i> The Golden Insight</h3>
+            <blockquote class="quote-block">
+                Humans don't fail because tasks are hard. They fail because tasks are not habitual.
+            </blockquote>
+            <p>If we protect meaningless streaks, imagine protecting streaks that build real skills.</p>
+        </div>
+    </section>
+
+    <!-- 4. Comparison Table -->
+    <section id="comparison" class="reveal">
+        <h2 class="section-title">4. Snapchat vs Coding Streak</h2>
+        <div class="comparison-grid">
+            <div class="comparison-card snapchat">
+                <div class="comparison-item">
+                    <div class="comparison-icon"><i class="fab fa-snapchat-ghost"></i></div>
+                    <div class="comparison-text">One random snap</div>
+                </div>
+                <div class="comparison-item">
+                    <div class="comparison-icon"><i class="fas fa-gamepad"></i></div>
+                    <div class="comparison-text">Pure entertainment</div>
+                </div>
+                <div class="comparison-item">
+                    <div class="comparison-icon"><i class="fas fa-clock"></i></div>
+                    <div class="comparison-text">Temporary fun</div>
+                </div>
+                <div class="comparison-item">
+                    <div class="comparison-icon"><i class="fas fa-thumbs-up"></i></div>
+                    <div class="comparison-text">Social validation</div>
+                </div>
+            </div>
+
+            <div class="comparison-card coding">
+                <div class="comparison-item">
+                    <div class="comparison-icon"><i class="fas fa-code"></i></div>
+                    <div class="comparison-text">One LeetCode problem</div>
+                </div>
+                <div class="comparison-item">
+                    <div class="comparison-icon"><i class="fas fa-rocket"></i></div>
+                    <div class="comparison-text">Real skill-building</div>
+                </div>
+                <div class="comparison-item">
+                    <div class="comparison-icon"><i class="fas fa-briefcase"></i></div>
+                    <div class="comparison-text">Long-term career</div>
+                </div>
+                <div class="comparison-item">
+                    <div class="comparison-icon"><i class="fas fa-trophy"></i></div>
+                    <div class="comparison-text">Professional validation</div>
+                </div>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 3rem;">
+            <img src="https://images.unsplash.com/photo-1618578073256-bec403b1e5b9?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+                alt="LeetCode streak visualization"
+                style="max-width: 700px; border-radius: 25px; box-shadow: var(--shadow-heavy);">
+        </div>
+    </section>
+
+    <!-- 5. Reality Check -->
+    <section id="reality" class="reveal">
+        <h2 class="section-title">5. Let's Be Honest</h2>
+        <div class="glass-card">
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4><i class="fas fa-dizzy"></i> Coding Feels Scary</h4>
+                        <p>Problems look confusing. Time limits terrify us. We see 200+ test cases failing.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4><i class="fas fa-users"></i> Topper Comparison</h4>
+                        <p>We compare with students solving 10 problems daily while we're stuck on problem #1.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4><i class="fas fa-clock"></i> Waiting to Feel Ready</h4>
+                        <p>"I'll start when I learn more theory." Spoiler: That day never comes.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4><i class="fas fa-lightning"></i> The Truth</h4>
+                        <p><strong>I've felt ALL of this too.</strong> But nobody starts confident. Confidence comes
+                            AFTER consistency.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Golden Rule -->
+    <section id="challenge" class="challenge-section">
+        <div class="challenge-content reveal">
+            <h2 class="challenge-title bounce-in">🟡 The Golden Rule</h2>
+            <p style="font-size: 1.4rem; margin-bottom: 3rem; line-height: 1.6;">
+                Never aim for more than <strong>ONE PROBLEM A DAY</strong>
+            </p>
+
+            <div class="challenge-grid">
+                <div class="challenge-step reveal-left">
+                    <div class="step-number">1</div>
+                    <h4>Removes Pressure</h4>
+                    <p>No more "I need 3 hours today". Just 20 minutes guaranteed.</p>
+                </div>
+                <div class="challenge-step reveal">
+                    <div class="step-number">2</div>
+                    <h4>Prevents Burnout</h4>
+                    <p>Most days you'll solve 1. Some days you'll solve 3+ without noticing!</p>
+                </div>
+                <div class="challenge-step reveal-right">
+                    <div class="step-number">3</div>
+                    <h4>Makes Starting Easy</h4>
+                    <p>The hardest part is starting. One problem = momentum guaranteed.</p>
+                </div>
+            </div>
+
+            <div style="margin-top: 4rem;">
+                <button class="btn-primary" style="font-size: 1.3rem; padding: 1.5rem 4rem;" onclick="startChallenge()">
+                    🚀 Start 7-Day Challenge Now
+                </button>
+                <p style="margin-top: 2rem; font-size: 1.1rem; opacity: 0.9;">
+                    Minimum: 1 LeetCode problem/day. Track your streak. Beat yesterday's you.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Why Daily Beats Talent -->
+    <section id="daily-talent" class="reveal">
+        <h2 class="section-title">6. Why Daily Beats Talent</h2>
+        <div class="glass-card reveal-left">
+            <h3><i class="fas fa-times-circle"></i> Myth ❌</h3>
+            <blockquote style="font-size: 1.6rem; font-weight: 700; color: #ff6b6b; margin: 2rem 0;">
+                "Only smart students are good at coding"
+            </blockquote>
+            <p>This keeps 90% of students from starting. Truth: Good coders are CONSISTENT coders.</p>
+        </div>
+
+        <div class="glass-card reveal-right">
+            <h3><i class="fas fa-check-circle"></i> Truth ✅</h3>
+            <ul style="font-size: 1.2rem; margin-top: 1.5rem;">
+                <li>• Daily exposure reduces fear completely</li>
+                <li>• Repetition builds problem-solving patterns</li>
+                <li>• <strong>10 problems × 30 days = 300 problems</strong></li>
+                <li>• Most students solve &lt; 100 problems/year</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 8. Personal Practice -->
+    <section id="personal" class="reveal">
+        <h2 class="section-title">7. How I'm Doing This</h2>
+        <div class="glass-card">
+            <h3><i class="fas fa-user-circle"></i> My Daily System</h3>
+            <div class="challenge-grid">
+                <div class="challenge-step">
+                    <i class="fas fa-clock" style="font-size: 3rem; color: #667eea; margin-bottom: 1rem;"></i>
+                    <h4>Fixed 20-Min Window</h4>
+                    <p>9 PM daily, no matter what. Even if tired, I solve 1 easy problem.</p>
+                </div>
+                <div class="challenge-step">
+                    <i class="fas fa-brain" style="font-size: 3rem; color: #4facfe; margin-bottom: 1rem;"></i>
+                    <h4>Easy Problems First</h4>
+                    <p>Start with "Easy" tagged problems. Build momentum before hard ones.</p>
+                </div>
+                <div class="challenge-step">
+                    <i class="fas fa-times-circle" style="font-size: 3rem; color: #ff6b6b; margin-bottom: 1rem;"></i>
+                    <h4>No Perfection</h4>
+                    <p>Accept suboptimal solutions. Just don't break the streak.</p>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 3rem;">
+                <p style="font-size: 1.4rem; font-style: italic; color: var(--text-secondary);">
+                    "Some days I fail. Some days I'm lazy. But I always come back — the streak calls me."
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. 30-60 Day Results -->
+    <section id="results" class="reveal">
+        <h2 class="section-title">8. What Happens After 30-60 Days</h2>
+        <div class="stats-grid">
+            <div class="stat-card reveal">
+                <div class="stat-value">📖</div>
+                <div>Problems feel familiar</div>
+            </div>
+            <div class="stat-card reveal">
+                <div class="stat-value">⚡</div>
+                <div>Logic improves automatically</div>
+            </div>
+            <div class="stat-card reveal">
+                <div class="stat-value">⌨️</div>
+                <div>Syntax becomes natural</div>
+            </div>
+            <div class="stat-card reveal">
+                <div class="stat-value">😨 → 😎</div>
+                <div>Fear completely reduces</div>
+            </div>
+            <div class="stat-card reveal">
+                <div class="stat-value">🤫</div>
+                <div>Confidence grows silently</div>
+            </div>
+            <div class="stat-card reveal">
+                <div class="stat-value">👀</div>
+                <div>Others notice first</div>
+            </div>
+        </div>
+
+        <div class="glass-card" style="margin-top: 4rem;">
+            <blockquote class="quote-block">
+                One snap a day didn't change your life. One problem a day can change everything.
+            </blockquote>
+        </div>
+    </section>
+
+    <!-- Group Challenge -->
+    <section class="challenge-section reveal">
+        <div class="challenge-content">
+            <h2 class="challenge-title">Group Challenge</h2>
+            <div style="font-size: 1.6rem; margin-bottom: 3rem; line-height: 1.5;">
+                <strong>7-DAY CODING STREAK CHALLENGE</strong><br>
+                Minimum: 1 problem/day • Track your streak • No competition — only consistency
+            </div>
+            <div
+                style="background: rgba(255,255,255,0.95); padding: 3rem; border-radius: 20px; box-shadow: 0 20px 60px rgba(0,0,0,0.2);">
+                <p style="font-size: 1.4rem; font-weight: 700; color: #2d3748; margin-bottom: 2rem;">
+                    "We're not competing with each other. We're competing with yesterday's version of ourselves."
+                </p>
+                <div style="display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap;">
+                    <button class="btn-primary" onclick="joinChallenge()"
+                        style="padding: 1.2rem 3rem; font-size: 1.2rem;">
+                        <i class="fas fa-users"></i> Join Challenge
+                    </button>
+                    <button class="btn-secondary" onclick="downloadTracker()"
+                        style="padding: 1.2rem 3rem; font-size: 1.2rem;">
+                        <i class="fas fa-download"></i> Get Tracker
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final Message -->
+    <section class="hero" style="height: 80vh; background: var(--primary-gradient); padding: 0;">
+        <div class="reveal" style="text-align: center; padding: 4rem 2rem;">
+            <div
+                style="font-family: 'Orbitron', monospace; font-size: 5rem; font-weight: 900; margin-bottom: 2rem; color: white; text-shadow: 0 0 30px rgba(255,255,255,0.5);">
+                No Zero Days
+            </div>
+            <div style="font-size: 2.5rem; font-weight: 300; margin: 2rem 0 4rem; color: rgba(255,255,255,0.95);">
+                💻 One Problem Daily ⏳ Small Effort, Big Future
+            </div>
+            <div style="font-size: 1.8rem; margin-bottom: 3rem; color: rgba(255,255,255,0.9);">
+                <strong>Protect the streak. Let the streak protect your future.</strong>
+            </div>
+            <a href="#challenge" class="btn-primary" style="font-size: 1.4rem; padding: 1.5rem 4rem;">
+                <i class="fas fa-fire"></i> Start Now
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <h3>From Streaks to Skills</h3>
+            <p>Built for students by a student. Let's transform our coding journey together.</p>
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-discord"></i></a>
+            </div>
+            <p style="margin-top: 2rem; opacity: 0.7;">© 2026 CodeStreak Community. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Custom Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>

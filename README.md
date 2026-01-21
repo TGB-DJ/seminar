@@ -21,13 +21,13 @@ A motivational web platform designed to shift focus from social media streaks (S
 ## 🚀 Setup
 
 1.  Clone the repository.
-2.  Open `snap.html` in your browser.
+2.  Open `index.html` in your browser.
     *   *No build steps or dependencies required.*
 
 ## 📂 Project Structure
 
 ```
-├── snap.html      # Main entry point
+├── index.html     # Main entry point
 ├── style.css      # Global styles and animations
 ├── script.js      # Core logic (particles, scroll reveal, counters)
 └── README.md      # Project documentation

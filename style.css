@@ -857,15 +857,22 @@ section {
 
 /* Footer */
 .footer {
-    background: var(--dark-bg);
+    background: #1a1a2e;
+    /* Slightly lighter than black for visibility */
     padding: 4rem 5% 2rem;
     text-align: center;
-    color: var(--text-secondary);
+    color: var(--text-primary);
+    border-top: 1px solid var(--glass-border);
 }
 
 .footer-content {
     max-width: 800px;
     margin: 0 auto 3rem;
+}
+
+.footer-content p {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
 }
 
 .social-links {
